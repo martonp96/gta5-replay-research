@@ -1,0 +1,4 @@
+build
+vsxmake*
+.xmake
+.vscode
