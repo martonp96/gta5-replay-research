@@ -10,6 +10,7 @@ const char* GetPacketName(uint16_t id)
 	case 4: return "CPacketCameraUpdate";
 	case 5: return "CPacketClock";
 	case 6: return "CPacketWeather";
+	case 8: return "CPacketAlign2";
 	case 7: return "CPacketWaterSimulate";
 	case 9: return "CPacketGameTime";
 	case 12: return "CPacketVehicleCreate";
@@ -49,6 +50,7 @@ const char* GetPacketName(uint16_t id)
 	case 62: return "CPacketFragData";
 	case 63: return "CPacketFragBoneData";
 	case 64: return "CPacketVehicleUpdate::tfragBoneDataType";
+	case 65: return "CPacketAnimatedObjBoneData_AdditionalData";
 	case 69: return "CPacketEvolvePtFx";
 	case 70: return "CPacketPedBreathFx";
 	case 71: return "CPacketPedSmokeFx";
@@ -313,6 +315,7 @@ const char* GetPacketName(uint16_t id)
 	case 367: return "CPacketFocusEntity";
 	case 368: return "CPacketWeaponAutoFireStop";
 	case 369: return "CPacketVehicleUpdate::tfragBoneDataType_HighQuality";
+	case 370: return "CPacketVehicleUpdate__tfragBoneDataType_HQ_AdditionalData";
 	case 371: return "CPacketSubCarUpdate";
 	case 372: return "CPacketVehicleWeaponCharge";
 	case 373: return "CPacketFocusPosAndVel";
@@ -328,6 +331,7 @@ enum ePacketID : uint16_t
 	CPacketClock = 5,
 	CPacketWeather = 6,
 	CPacketWaterSimulate = 7,
+	CPacketAlign2 = 8,
 	CPacketGameTime = 9,
 	CPacketVehicleCreate = 12,
 	CPacketVehicleUpdate = 13,
@@ -366,6 +370,7 @@ enum ePacketID : uint16_t
 	CPacketFragData = 62,
 	CPacketFragBoneData = 63,
 	CPacketVehicleUpdate__tfragBoneDataType = 64,
+	CPacketAnimatedObjBoneData_AdditionalData = 65,
 	CPacketEvolvePtFx = 69,
 	CPacketPedBreathFx = 70,
 	CPacketPedSmokeFx = 71,
@@ -630,6 +635,7 @@ enum ePacketID : uint16_t
 	CPacketFocusEntity = 367,
 	CPacketWeaponAutoFireStop = 368,
 	CPacketVehicleUpdate__tfragBoneDataType_HighQuality = 369,
+	CPacketVehicleUpdate__tfragBoneDataType_HQ_AdditionalData = 370,
 	CPacketSubCarUpdate = 371,
 	CPacketVehicleWeaponCharge = 372,
 	CPacketFocusPosAndVel = 373
